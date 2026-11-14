@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotoGest - Gestión de Taller y Garantías</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Oscuro (#0F172A) -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">MG</div>
+        <div>
+          <div class="brand-title">MotoGest <span class="brand-tag">TALLER</span></div>
+          <div class="brand-subtitle">Software de Gestión de Taller</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">MÓDULOS DEL SISTEMA</div>
+        <button class="nav-btn active" data-tab="checkin">Entrada / Check-in</button>
+        <button class="nav-btn" data-tab="warranties">Centro de Garantías</button>
+        <button class="nav-btn" data-tab="orders">Tablero de Taller</button>
+        <button class="nav-btn" data-tab="team">Personal & Mecánicos</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <strong>Asesor: Andrés G</strong>
+        <span>Recepción & Diagnóstico</span>
+      </div>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <h1 id="topbar-title">MotoGest | Nueva Orden de Taller (<span class="mono">#OS-1045</span>)</h1>
+        <div class="topbar-actions">
+          <span class="advisor-pill">Asesor: <strong>Andrés G</strong></span>
+        </div>
+      </header>
+
+      <main id="app-content" class="content-area">
+        <!-- Se renderiza dinámicamente con js/app.js -->
+      </main>
+    </div>
+  </div>
+
+  <!-- Scripts JavaScript (.js) -->
+  <script src="js/data.js"></script>
+  <script src="js/checkin.js"></script>
+  <script src="js/garantias.js"></script>
+  <script src="js/kanban.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
